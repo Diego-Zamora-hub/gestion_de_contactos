@@ -16,6 +16,8 @@ void main() {
         menubuscar(contactos);
       case 3:
         actualizartelefonoContacto(contactos);
+      case 4:
+        eliminarContacto(contactos);
       case 0:
         print("Saliendo del programa...");
       default:

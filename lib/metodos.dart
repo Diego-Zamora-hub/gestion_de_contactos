@@ -84,3 +84,15 @@ void actualizartelefonoContacto(List<Map<String, dynamic>> contactos) {
     }
   }
 }
+
+void eliminarContacto(List<Map<String, dynamic>> contactos) {
+  stdout.write("Ingrese el id del contacto a eliminar: ");
+  int id = int.parse(stdin.readLineSync().toString());
+  contactos.removeWhere((x) => x['id'] == id);
+  stdout.writeln("Contacto eliminado correctamente.");
+}
+
+void mostrarOrdenAlfabetico(List<Map<String, dynamic>> contactos) {
+  contactos.sort((a, b) => a['nombre'].compareTo(b['nombre']));
+  mostrarcontactos(contactos);
+}

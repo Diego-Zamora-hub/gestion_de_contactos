@@ -16,6 +16,7 @@ void menubuscar(List<Map<String, dynamic>> contactos) {
   stdout.writeln("2. buscar por id.");
   stdout.writeln("3. buscar por nombre.");
   stdout.writeln("4. buscar por ciudad.");
+  stdout.writeln("5. mostrar por orden alfabético.");
   stdout.writeln("0. Volver al menú principal");
   stdout.write("Seleccione una opción: ");
   int opcion2 = int.parse(stdin.readLineSync().toString());
@@ -29,6 +30,8 @@ void menubuscar(List<Map<String, dynamic>> contactos) {
       buscarPorNombre(contactos);
     case 4:
       buscarPorCiudad(contactos);
+    case 5:
+      mostrarOrdenAlfabetico(contactos);
     case 0:
       print("Volviendo al menú principal...");
     default:
