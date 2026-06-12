@@ -1,4 +1,5 @@
-import 'package:gestion_de_contactos/gestion_de_contactos.dart';
+import 'package:gestion_de_contactos/metodos.dart';
+import 'package:gestion_de_contactos/menus.dart';
 import 'dart:io';
 
 void main() {
